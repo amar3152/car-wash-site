@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShinePro Car Wash Center | Premium Car Cleaning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0ea5e9;
+      --accent:#22c55e;
+      --bg:#f8fafc;
+      --dark:#0f172a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Poppins',sans-serif;background:var(--bg);color:#333}
+    header{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#0284c7,#0ea5e9);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;color:#fff}
+    header h1{margin:0;font-size:20px}
+    nav a{color:#fff;margin-left:18px;text-decoration:none;font-weight:500}
+    nav a:hover{text-decoration:underline}
+
+    .cta-btn{background:var(--accent);color:#fff;padding:10px 18px;border-radius:999px;font-weight:600;text-decoration:none}
+
+    .hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');background-size:cover;background-position:center;color:#fff;padding:90px 20px;text-align:center}
+    .hero h2{font-size:44px;margin-bottom:10px}
+    .hero p{font-size:18px;opacity:.95}
+    .hero-actions{margin-top:25px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+    .section{padding:60px 28px;max-width:1150px;margin:auto}
+    .section h2{text-align:center;margin-bottom:10px;font-size:32px}
+    .section p{text-align:center;color:#555;margin-bottom:35px}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+    .card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 12px 30px rgba(0,0,0,.08);transition:.3s}
+    .card:hover{transform:translateY(-6px)}
+    .price{font-size:22px;font-weight:700;color:var(--primary)}
+
+    .services li{list-style:none;margin:10px 0;padding-left:22px;position:relative}
+    .services li:before{content:'✔';position:absolute;left:0;color:var(--primary);font-weight:700}
+
+    .contact{background:#e0f2fe;padding:70px 20px;text-align:center}
+    .contact form{max-width:420px;margin:auto}
+    .contact input,.contact textarea{width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #ccc}
+    .contact button{background:var(--primary);color:#fff;border:none;padding:14px 32px;border-radius:999px;font-size:15px;cursor:pointer}
+
+    footer{background:var(--dark);color:#fff;text-align:center;padding:22px}
+
+    .whatsapp-float{position:fixed;bottom:22px;right:22px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:600;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+
+    @media(max-width:768px){
+      .hero h2{font-size:34px}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ShinePro Car Wash</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="cta-btn" href="#contact">Book Now</a>
+</header>
+
+<section class="hero">
+  <h2>Premium Car Wash & Detailing</h2>
+  <p>Foam Wash • Interior Cleaning • Polishing • Detailing</p>
+  <div class="hero-actions">
+    <a href="#services" class="cta-btn">Our Services</a>
+    <a href="#contact" class="cta-btn">Call / WhatsApp</a>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <p>Professional care for your car</p>
+  <div class="cards services">
+    <div class="card"><h3>Foam Wash</h3><li>High pressure wash</li><li>Scratch‑free cleaning</li></div>
+    <div class="card"><h3>Interior Cleaning</h3><li>Vacuum cleaning</li><li>Dashboard polishing</li></div>
+    <div class="card"><h3>Polishing & Wax</h3><li>Paint protection</li><li>Gloss finish</li></div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <h2>Affordable Pricing</h2>
+  <p>Best value packages</p>
+  <div class="cards">
+    <div class="card"><h3>Hatchback</h3><p class="price">₹399</p></div>
+    <div class="card"><h3>Sedan</h3><p class="price">₹499</p></div>
+    <div class="card"><h3>SUV</h3><p class="price">₹599</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Fast service • Affordable rates • Trusted care</p>
+  <p><strong>📞 +91 9876543210</strong></p>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <textarea placeholder="Car type & preferred time"></textarea>
+    <button type="submit">Book Car Wash</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 ShinePro Car Wash Center</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+
+</body>
+</html>
